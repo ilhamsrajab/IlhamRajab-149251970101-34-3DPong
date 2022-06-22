@@ -1,2 +1,9 @@
-# IlhamRajab-149251970101-34-3DPong
- Game 3D Pong Digital Scholarship Talent Fresh Graduate Academy Agate Game Programming
+# DTS FGA Agaté - Game Programming
+
+Nama : Ilham Syahidatul Rajab <br>
+ID Registrasi : 149251970101-34 <br>
+
+## Pong-like Game
+
+
+## Changelog
