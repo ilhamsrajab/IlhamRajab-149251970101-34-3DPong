@@ -18,10 +18,9 @@ public class PlayerController : MonoBehaviour
   }
 
   // Update is called once per frame
-  void Update()
+  void FixedUpdate()
   {
     Vector3 movement = GetInput();
-
     MoveObject(GetInput());
   }
 
@@ -48,6 +47,6 @@ public class PlayerController : MonoBehaviour
 
   private void MoveObject(Vector3 movement)
   {
-    rig.velocity = movement;
+    rig.MovePosition(transform.position + movement * Time.deltaTime * speed);
   }
 }
