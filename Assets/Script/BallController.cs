@@ -11,7 +11,7 @@ public class BallController : MonoBehaviour
   void Start()
   {
     rig = GetComponent<Rigidbody>();
-    this.direction = new Vector3(1f, 0f, 1f);
+    this.direction = new Vector3(1f, 0f, 0f);
     rig.velocity = direction * speed;
   }
 
