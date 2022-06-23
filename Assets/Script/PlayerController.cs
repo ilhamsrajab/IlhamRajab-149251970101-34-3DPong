@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-  public float speed;
+  public float speed = 5f;
   public KeyCode leftKey;
   public KeyCode rightKey;
   public KeyCode upKey;
@@ -17,8 +17,8 @@ public class PlayerController : MonoBehaviour
     rig = GetComponent<Rigidbody>();
   }
 
-  // Update is called once per frame
-  void FixedUpdate()
+  // Update is cal  void Update()
+  private void FixedUpdate()
   {
     Vector3 movement = GetInput();
     MoveObject(GetInput());
@@ -47,6 +47,10 @@ public class PlayerController : MonoBehaviour
 
   private void MoveObject(Vector3 movement)
   {
-    rig.MovePosition(transform.position + movement * Time.deltaTime * speed);
+    // rig.MovePosition(transform.position + movement * Time.deltaTime * speed);
+
+    rig.velocity = movement;
+
+    // transform.Translate(movement * Time.deltaTime * speed);
   }
 }
