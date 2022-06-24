@@ -32,8 +32,9 @@ public class BallController : MonoBehaviour
   {
     Debug.Log("Reset Ball");
 
-    direction = new Vector3(0f, 0f, 0f);
-    rig.velocity = direction * speed;
+    // direction = new Vector3(0f, 0f, 0f);
+    // rig.velocity = direction * speed;
+    Destroy(gameObject);
   }
 
 }
