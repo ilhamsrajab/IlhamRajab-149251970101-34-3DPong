@@ -11,6 +11,7 @@ public class BallController : MonoBehaviour
   void Start()
   {
     rig = GetComponent<Rigidbody>();
+
     this.direction = new Vector3(1f, 0f, 0f);
     rig.velocity = direction * speed;
   }
@@ -20,10 +21,19 @@ public class BallController : MonoBehaviour
     this.transform.position += direction * speed;
   }
 
+  // agar bola mantul
   private void OnCollisionEnter(Collision col)
   {
     Vector3 normal = col.contacts[0].normal;
     direction = Vector3.Reflect(direction, normal);
+  }
+
+  public void ResetBall()
+  {
+    Debug.Log("Reset Ball");
+
+    direction = new Vector3(0f, 0f, 0f);
+    rig.velocity = direction * speed;
   }
 
 }
