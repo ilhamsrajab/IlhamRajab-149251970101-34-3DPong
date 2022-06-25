@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ScoreController : MonoBehaviour
@@ -20,8 +19,5 @@ public class ScoreController : MonoBehaviour
     ScorePlayer4.text = manager.scorePlayer4.ToString();
   }
 
-  public void MenuButton()
-  {
-    SceneManager.LoadScene("MainMenu");
-  }
+
 }

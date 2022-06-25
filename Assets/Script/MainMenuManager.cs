@@ -6,6 +6,7 @@ using UnityEditor;
 
 public class MainMenuManager : MonoBehaviour
 {
+  public GameObject Panel;
   // Start is called before the first frame update
   public void PlayGame()
   {
@@ -16,6 +17,16 @@ public class MainMenuManager : MonoBehaviour
   public void HowToPlay()
   {
     Debug.Log("Halaman How To Play");
+    if (Panel != null)
+    {
+      bool isActive = Panel.activeSelf;
+      Panel.SetActive(!isActive);
+    }
+  }
+
+  public void Back()
+  {
+    SceneManager.LoadScene("MainMenu");
   }
 
   public void ExitGame()
