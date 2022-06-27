@@ -16,16 +16,31 @@ public class ScoreManager : MonoBehaviour
   public GameObject BlockWallPlayer4;
   public BallController ball;
   public GameplayManager manager;
-  private bool player1Lose;
-  private bool player2Lose;
-  private bool player3Lose;
-  private bool player4Lose;
-  private int jumlahPlayer = 4;
+  public string PlayerWin;
+  public int jumlahPlayer = 4;
 
-  private void Update()
+
+  public void Update()
   {
     if (jumlahPlayer == 1)
     {
+      if (BlockWallPlayer1.activeSelf != true)
+      {
+        PlayerWin = "Player 1";
+      }
+      if (BlockWallPlayer2.activeSelf != true)
+      {
+        PlayerWin = "Player 2";
+      }
+      if (BlockWallPlayer3.activeSelf != true)
+      {
+        PlayerWin = "Player 3";
+      }
+      if (BlockWallPlayer4.activeSelf != true)
+      {
+        PlayerWin = "Player 4";
+      }
+
       ResultScreen();
     }
   }
@@ -40,9 +55,7 @@ public class ScoreManager : MonoBehaviour
     {
       BlockWallPlayer1.SetActive(true);
 
-      player1Lose = true;
       jumlahPlayer -= 1;
-      Debug.Log("Player 1 Lose = " + player1Lose);
     }
   }
   public void AddScorePlayer2(int increment)
@@ -55,9 +68,7 @@ public class ScoreManager : MonoBehaviour
     {
       BlockWallPlayer2.SetActive(true);
 
-      player2Lose = true;
       jumlahPlayer -= 1;
-      Debug.Log("Player 2 Lose = " + player2Lose);
     }
   }
   public void AddScorePlayer3(int increment)
@@ -70,9 +81,7 @@ public class ScoreManager : MonoBehaviour
     {
       BlockWallPlayer3.SetActive(true);
 
-      player3Lose = true;
       jumlahPlayer -= 1;
-      Debug.Log("Player 3 Lose = " + player3Lose);
     }
   }
   public void AddScorePlayer4(int increment)
@@ -85,9 +94,7 @@ public class ScoreManager : MonoBehaviour
     {
       BlockWallPlayer4.SetActive(true);
 
-      player4Lose = true;
       jumlahPlayer -= 1;
-      Debug.Log("Player 4 Lose = " + player4Lose);
     }
   }
   public void ResultScreen()

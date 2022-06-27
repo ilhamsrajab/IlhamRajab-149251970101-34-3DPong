@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4477902, g: 0.49777156, b: 0.57542646, a: 1}
+  m_IndirectSpecularColor: {r: 0.45010173, g: 0.5001472, b: 0.57546306, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -366,7 +366,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player 1 Win
+  m_Text: Player Win
 --- !u!222 &100913703
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -901,7 +901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1846,6 +1846,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1211710414}
+  ColorPlayerWin: {fileID: 416691586}
+  PlayerWin: {fileID: 100913702}
+  manager: {fileID: 1102434777}
 --- !u!1001 &805670726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2659,6 +2662,8 @@ MonoBehaviour:
   BlockWallPlayer4: {fileID: 1693801498}
   ball: {fileID: 457735527}
   manager: {fileID: 783237957}
+  PlayerWin: 
+  jumlahPlayer: 4
 --- !u!4 &1102434778
 Transform:
   m_ObjectHideFlags: 0
@@ -3143,7 +3148,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -3194,13 +3199,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349402511}
-  m_LocalRotation: {x: 0.38381913, y: -0.09149068, z: 0.17258775, w: 0.9025109}
+  m_LocalRotation: {x: 0.4981068, y: -0.18526097, z: -0.3702715, w: 0.76188385}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 46.418, y: -2.715, z: 20.488}
+  m_LocalEulerAnglesHint: {x: 38.448, y: 303.753, z: 287.046}
 --- !u!1 &1416294489
 GameObject:
   m_ObjectHideFlags: 0
