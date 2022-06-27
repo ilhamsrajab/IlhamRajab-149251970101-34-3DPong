@@ -14,6 +14,10 @@ public class ScoreManager : MonoBehaviour
   public GameObject BlockWallPlayer2;
   public GameObject BlockWallPlayer3;
   public GameObject BlockWallPlayer4;
+  public PlayerController player1;
+  public PlayerController player2;
+  public PlayerController player3;
+  public PlayerController player4;
   public BallController ball;
   public GameplayManager manager;
   public string PlayerWin;
@@ -56,6 +60,8 @@ public class ScoreManager : MonoBehaviour
       BlockWallPlayer1.SetActive(true);
 
       jumlahPlayer -= 1;
+
+      player1.PlayerLose();
     }
   }
   public void AddScorePlayer2(int increment)
@@ -69,6 +75,7 @@ public class ScoreManager : MonoBehaviour
       BlockWallPlayer2.SetActive(true);
 
       jumlahPlayer -= 1;
+      player2.PlayerLose();
     }
   }
   public void AddScorePlayer3(int increment)
@@ -82,6 +89,7 @@ public class ScoreManager : MonoBehaviour
       BlockWallPlayer3.SetActive(true);
 
       jumlahPlayer -= 1;
+      player3.PlayerLose();
     }
   }
   public void AddScorePlayer4(int increment)
@@ -95,6 +103,7 @@ public class ScoreManager : MonoBehaviour
       BlockWallPlayer4.SetActive(true);
 
       jumlahPlayer -= 1;
+      player4.PlayerLose();
     }
   }
   public void ResultScreen()

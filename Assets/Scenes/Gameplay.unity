@@ -2242,6 +2242,10 @@ MonoBehaviour:
   BlockWallPlayer2: {fileID: 1377140983}
   BlockWallPlayer3: {fileID: 1116083427}
   BlockWallPlayer4: {fileID: 708587471}
+  player1: {fileID: 836288192}
+  player2: {fileID: 722096012}
+  player3: {fileID: 805670729}
+  player4: {fileID: 2087351461}
   ball: {fileID: 457735527}
   manager: {fileID: 783237957}
   PlayerWin: 

@@ -54,4 +54,8 @@ public class PlayerController : MonoBehaviour
     // transform.Translate(movement * Time.deltaTime * speed);
   }
 
+  public void PlayerLose()
+  {
+    speed = 0;
+  }
 }
