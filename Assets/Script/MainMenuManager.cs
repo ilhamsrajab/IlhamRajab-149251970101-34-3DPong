@@ -36,6 +36,6 @@ public class MainMenuManager : MonoBehaviour
     Debug.Log("Keluar dari game");
 
     // keluar playmode ketika berada pada unity editor
-    EditorApplication.ExitPlaymode();
+    // EditorApplication.ExitPlaymode();
   }
 }
