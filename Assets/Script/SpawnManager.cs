@@ -13,7 +13,7 @@ public class SpawnManager : MonoBehaviour
   public float DirectionXMax;
   public float DirectionZMin;
   public float DirectionZMax;
-  public float timer;
+  private float timer;
   private List<GameObject> balls = new List<GameObject>();
 
   private void Start()
@@ -31,13 +31,14 @@ public class SpawnManager : MonoBehaviour
       if (balls.Count < maxBall)
       {
         SpawnBall();
+        timer -= spawnInterval;
       }
 
-      timer -= spawnInterval;
     }
 
     if (ball != null && ball.transform.position.y < -10)
     {
+      balls.Remove(ball);
       Destroy(ball);
     }
   }
