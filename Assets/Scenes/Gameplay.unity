@@ -1298,6 +1298,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4956480933900574429, guid: 9ebb011c14598024eb92c49656791fd2, type: 3}
   m_PrefabInstance: {fileID: 708587469}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &708587471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4956480933900574401, guid: 9ebb011c14598024eb92c49656791fd2, type: 3}
+  m_PrefabInstance: {fileID: 708587469}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &715123773
 GameObject:
   m_ObjectHideFlags: 0
@@ -2234,9 +2239,9 @@ MonoBehaviour:
   scorePlayer4: 14
   maxScore: 15
   BlockWallPlayer1: {fileID: 809148846}
-  BlockWallPlayer2: {fileID: 0}
-  BlockWallPlayer3: {fileID: 0}
-  BlockWallPlayer4: {fileID: 0}
+  BlockWallPlayer2: {fileID: 1377140983}
+  BlockWallPlayer3: {fileID: 1116083427}
+  BlockWallPlayer4: {fileID: 708587471}
   ball: {fileID: 457735527}
   manager: {fileID: 783237957}
   PlayerWin: 
@@ -2319,6 +2324,11 @@ PrefabInstance:
 --- !u!4 &1116083426 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4956480933900574429, guid: 9ebb011c14598024eb92c49656791fd2, type: 3}
+  m_PrefabInstance: {fileID: 1116083425}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1116083427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4956480933900574401, guid: 9ebb011c14598024eb92c49656791fd2, type: 3}
   m_PrefabInstance: {fileID: 1116083425}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1119904781
@@ -2867,6 +2877,11 @@ PrefabInstance:
 --- !u!4 &1377140982 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4956480933900574429, guid: 9ebb011c14598024eb92c49656791fd2, type: 3}
+  m_PrefabInstance: {fileID: 1377140981}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1377140983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4956480933900574401, guid: 9ebb011c14598024eb92c49656791fd2, type: 3}
   m_PrefabInstance: {fileID: 1377140981}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1416294489
