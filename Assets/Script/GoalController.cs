@@ -13,8 +13,7 @@ public class GoalController : MonoBehaviour
 
   private void OnTriggerEnter(Collider col)
   {
-
-    if (col == ball)
+    if (col.tag == "ball")
     {
       if (isPlayer1)
       {

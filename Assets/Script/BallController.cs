@@ -5,6 +5,7 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
   public float speed = 3f;
+  public SpawnManager manager;
   private Vector3 direction;
   private Rigidbody rig;
   // Start is called before the first frame update
@@ -12,7 +13,8 @@ public class BallController : MonoBehaviour
   {
     rig = GetComponent<Rigidbody>();
 
-    this.direction = new Vector3(1f, 0f, 0f);
+    // this.direction = new Vector3(Random.Range(0.5f, 1f), 0f, Random.Range(0.5f, 1f));
+    // this.direction = new Vector3(Random.Range(manager.DirectionXMin, manager.DirectionXMax), 0f, Random.Range(manager.DirectionZMin, manager.DirectionZMax));
     rig.velocity = direction * speed;
   }
 
@@ -34,7 +36,7 @@ public class BallController : MonoBehaviour
 
     // direction = new Vector3(0f, 0f, 0f);
     // rig.velocity = direction * speed;
-    // Destroy(gameObject);
+    Destroy(gameObject);
   }
 
 }
