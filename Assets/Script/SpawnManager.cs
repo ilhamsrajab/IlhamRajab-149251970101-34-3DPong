@@ -50,5 +50,6 @@ public class SpawnManager : MonoBehaviour
     ball.transform.parent = transform;
 
     balls.Add(ball);
+    ball.SetActive(true);
   }
 }
