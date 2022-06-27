@@ -13,7 +13,7 @@ public class BallController : MonoBehaviour
   {
     rig = GetComponent<Rigidbody>();
 
-    // this.direction = new Vector3(Random.Range(0.5f, 1f), 0f, Random.Range(0.5f, 1f));
+    this.direction = new Vector3(Random.Range(0.5f, 1f), 0f, Random.Range(0.5f, 1f));
     // this.direction = new Vector3(Random.Range(manager.DirectionXMin, manager.DirectionXMax), 0f, Random.Range(manager.DirectionZMin, manager.DirectionZMax));
     rig.velocity = direction * speed;
   }
@@ -34,9 +34,7 @@ public class BallController : MonoBehaviour
   {
     Debug.Log("Reset Ball");
 
-    // direction = new Vector3(0f, 0f, 0f);
-    // rig.velocity = direction * speed;
-    Destroy(gameObject);
+    // Destroy(gameObject);
   }
 
 }

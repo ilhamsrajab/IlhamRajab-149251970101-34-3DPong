@@ -32,7 +32,13 @@ public class SpawnManager : MonoBehaviour
       {
         SpawnBall();
       }
+
       timer -= spawnInterval;
+    }
+
+    if (ball != null && ball.transform.position.y < -10)
+    {
+      Destroy(ball);
     }
   }
 
