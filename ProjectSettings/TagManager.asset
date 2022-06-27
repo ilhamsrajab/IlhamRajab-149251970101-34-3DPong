@@ -6,6 +6,9 @@ TagManager:
   tags:
   - GoalBlockPlayer1
   - ball
+  - GoalBlockPlayer2
+  - GoalBlockPlayer3
+  - GoalBlockPlayer4
   layers:
   - Default
   - TransparentFX

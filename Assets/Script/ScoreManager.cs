@@ -61,6 +61,8 @@ public class ScoreManager : MonoBehaviour
 
       jumlahPlayer -= 1;
 
+      GameObject.FindWithTag("GoalBlockPlayer1").SetActive(false);
+
       player1.PlayerLose();
     }
   }
@@ -75,6 +77,9 @@ public class ScoreManager : MonoBehaviour
       BlockWallPlayer2.SetActive(true);
 
       jumlahPlayer -= 1;
+
+      GameObject.FindWithTag("GoalBlockPlayer2").SetActive(false);
+
       player2.PlayerLose();
     }
   }
@@ -89,6 +94,9 @@ public class ScoreManager : MonoBehaviour
       BlockWallPlayer3.SetActive(true);
 
       jumlahPlayer -= 1;
+
+      GameObject.FindWithTag("GoalBlockPlayer3").SetActive(false);
+
       player3.PlayerLose();
     }
   }
@@ -103,6 +111,9 @@ public class ScoreManager : MonoBehaviour
       BlockWallPlayer4.SetActive(true);
 
       jumlahPlayer -= 1;
+
+      GameObject.FindWithTag("GoalBlockPlayer4").SetActive(false);
+
       player4.PlayerLose();
     }
   }
