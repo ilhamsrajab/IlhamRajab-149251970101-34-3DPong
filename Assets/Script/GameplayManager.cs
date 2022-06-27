@@ -13,6 +13,6 @@ public class GameplayManager : MonoBehaviour
   }
   public void ReplayButton()
   {
-    SceneManager.LoadScene("Gameplay");
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
   }
 }

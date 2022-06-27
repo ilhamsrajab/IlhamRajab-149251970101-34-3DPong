@@ -34,7 +34,7 @@ public class BallController : MonoBehaviour
 
     // direction = new Vector3(0f, 0f, 0f);
     // rig.velocity = direction * speed;
-    Destroy(gameObject);
+    // Destroy(gameObject);
   }
 
 }

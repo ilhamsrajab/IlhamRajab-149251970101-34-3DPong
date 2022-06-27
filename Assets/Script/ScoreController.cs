@@ -18,6 +18,4 @@ public class ScoreController : MonoBehaviour
     ScorePlayer3.text = manager.scorePlayer3.ToString();
     ScorePlayer4.text = manager.scorePlayer4.ToString();
   }
-
-
 }
